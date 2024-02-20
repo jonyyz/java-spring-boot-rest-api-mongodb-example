@@ -11,7 +11,6 @@ import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 @Document(collection = "todo-list")
 public class TodoList {
-
   @Id
   @JsonSerialize(using = ToStringSerializer.class)
   private ObjectId id;
@@ -25,7 +24,7 @@ public class TodoList {
   }
 
   public ObjectId getId() {
-    return this.id;
+    return id;
   }
 
   public void setId(ObjectId id) {
@@ -33,7 +32,7 @@ public class TodoList {
   }
 
   public String getName() {
-    return this.name;
+    return name;
   }
 
   public void setName(String name) {
@@ -41,10 +40,11 @@ public class TodoList {
   }
 
   public List<Todo> getTodos() {
-    return this.todos;
+    return todos;
   }
 
   public void setTodos(List<Todo> todos) {
     this.todos = todos;
   }
+
 }

@@ -11,11 +11,11 @@
   </parent>
   <groupId>com.todos</groupId>
   <artifactId>todos-demo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>todos-demo</name>
   <description>Spring Boot Mongo DB REST API Example</description>
   <properties>
-    <java.version>21</java.version>
+    <java.version>17</java.version>
   </properties>
   <dependencies>
 
